@@ -1,0 +1,88 @@
+body {
+	background-image: url("back.png");
+	background-size:cover;
+	background-blend-mode: lighten;
+	background-color: rgb(109,179,242);
+	@include filter-gradient(#6db3f2, #1e69de, horizontal);
+	@include background-image(linear-gradient(left,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%));
+}
+
+.visor-related img {  
+	position: absolute;	
+	top: 10vh;
+	left: 20vw;
+	width: 30vw;
+	
+}
+
+#source {	
+	margin-top: 8px;
+  	z-index: 1;
+  	border:1px solid black;
+	border-radius: 20px;
+}
+
+#attach {	
+	z-index: 2;
+	margin-left: -8px;	
+	position: relative;
+}
+
+#texture {
+	z-index: 3;
+	margin-left: -29.99vw;	
+	position: relative;
+}
+
+.color-controls {
+	position: absolute;
+	top: 12vh;
+	left: 57vw;
+	width: 22vw;
+	height: 24vw;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	border: 1px solid black;
+	border-radius: 20px;	
+	background-color: rgba(250, 250, 250, .5);
+}
+
+.colorbox {
+	border: 3px solid grey;
+	width: 8vw;
+	height: 8vw;
+	margin: 0px 0px 0px 0px;
+	border-radius: 10px;
+	transition: all .15s;
+	background-color: rgb(253, 244, 129);
+}
+
+.colorbox:hover {
+	border: 1px solid white;
+	transform: scale(1.15);
+}
+
+.texture-controls{
+	position: relative;
+	top: 20vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.texture {
+	width: 10vw;
+	margin: 1vh 1vw;	
+	border-radius: 15px;
+	transition: all .15s;
+	background-color: rgba(250, 250, 250, .5);
+	border: 3px solid grey;
+}
+
+.texture:hover {
+	transform: scale(1.25);
+	background-color: white;
+	border: 1px solid black;
+}

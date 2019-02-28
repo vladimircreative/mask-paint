@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hydrodip this!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="visor-related">
+		<img src="visor.png" id="source">	
+		<img src="visor-attach.png" id="attach">	
+		<img src="tx00.png" id="texture">	
+	</div>
+	<div class = "contols" hidden>
+		<div class="slidecontainer">
+		  <input type="range" min="1" max="360" value="50" class="slider" id="hue">
+		</div>	
+		<div class="slidecontainer">
+		  <input type="range" min="1" max="100" value="50" class="slider" id="sat">
+		</div>
+		<div class="slidecontainer">
+		  <input type="range" min="20" max="130" value="100" class="slider" id="bri">
+		</div>
+		<span id="color-value"></span>
+	</div>
+
+	<div class="texture-controls" >
+		<img src="tx00.png" class="texture">
+		<img src="tx01.png" class="texture">
+		<img src="tx02.png" class="texture">
+		<img src="tx03.png" class="texture">
+		<img src="tx04.png" class="texture">
+	</div>
+
+	<div class="color-controls">
+		<p class="colorbox"></p>
+		<p class="colorbox"></p>
+		<p class="colorbox"></p>
+		<p class="colorbox"></p>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
