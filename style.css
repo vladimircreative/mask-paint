@@ -62,6 +62,7 @@ body {
 .colorbox:hover {
 	border: 1px solid white;
 	transform: scale(1.15);
+	box-shadow: 5px 5px 10px 1px grey;
 }
 
 .texture-controls{
@@ -85,4 +86,5 @@ body {
 	transform: scale(1.25);
 	background-color: white;
 	border: 1px solid black;
+	box-shadow: 10px 10px 10px 1px grey;
 }
